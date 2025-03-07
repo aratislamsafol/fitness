@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap');
 :root{
-    --primary-color: #000000;
+    --primary-color: #000000;  
     --secondary-color: #222222; 
     /* linear color of banner bg */
     --tertiary-color: rgba(119, 119, 119, 0); 
@@ -9,6 +9,10 @@
     --fifth-color: #E6533C;
     /* regular paragrah color */
     --sixth-color: rgba(255, 255, 255, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 /* font */
 .inter-regular {
@@ -19,26 +23,27 @@
 }
 .lavishly-regular {
     font-family: "Lavishly Yours", cursive;
-    font-weight: 400;
+    font-size: 4.88rem;
     font-style: normal;
 }
 h1{
-    font-size: 78px;
+    font-size: 4.88rem;
 }
 h2{
-    font-size: 48px;
+    font-size: 3rem;
 }
 h3{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
+/* navlink,  */
 h4{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 span{
-    font-size: 13px;
+    font-size: 0.81rem;
 }
 p{
-    font-size: 16px;
+    font-size: 1rem;
 }
 /* text color */
 .text-black{
@@ -57,7 +62,7 @@ p{
     color: var(--fifth-color);
 }
 .bg-gray-700{
-    color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
 }
 /* Font Weights */
 .font-thin { font-weight: 100; }
@@ -80,6 +85,11 @@ p{
     border: none;
     background-color: transparent;
     border-radius: 42px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--fourth-color);
+    background-color: var(--fifth-color);
+    padding: 16px 0;
 }
 /* others */
 .d-flex{
@@ -105,7 +115,14 @@ p{
 }
 body{
     max-width: 1440px;
+    background-color: var(--primary-color);
 }
 .container{
-    max-width: 1060px;
+    max-width: 73.61%;
+    margin: 0 auto;
+}
+
+.active{
+    border-radius: 46px;
+    background-color: var(--fifth-color);
 }

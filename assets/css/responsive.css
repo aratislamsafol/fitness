@@ -1,0 +1,139 @@
+@media (max-width: 576px) {
+    /* font */
+    .lavishly-regular {
+        font-size: 2.25rem;
+    }
+    h1{
+        font-size: 2.25rem;
+    }
+    /* h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    } */
+    .container{
+        max-width: 92%;
+    }
+    /* navlink,  */
+    h4{
+        font-size: 1.125rem;
+    }
+    span{
+        font-size: 0.61rem;
+    }
+    .nav-items{
+        display: none;
+    }
+    .banner-content h1{
+        line-height: 40px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-img .banner-box1, .banner-box2{
+        right: 6px;
+        top: 68px;
+        font-size: 1.875rem;
+        border-radius: 9.07px;
+        max-width: 145.91px;
+        max-height: 74.09px;
+    }
+    .banner-box2{
+        right: 187px;
+        top: 259px;
+    }
+    .btn_primary{
+        max-width: 169px;
+        width: 100%;
+        border-radius: 42px;
+        padding: 16px 0;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { 
+    /* font */
+    h1{
+        font-size: 4.8rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    /* navlink,  */
+    h4{
+        font-size: 1.125rem;
+    }
+    span{
+        font-size: 0.61rem;
+    }
+
+    .container{
+        max-width: 92%;
+    }
+    .nav-items{
+        display: flex;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-img .banner-box1, .banner-box2{
+        right: -33px;
+        top: 68px;
+        font-size: 1.875rem;
+        border-radius: 9.07px;
+        max-width: 193px;
+        max-height: 98px;
+    }
+    .banner-box2{
+        right: 204px;
+        top: 318px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+        /* font */
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+        h3{
+            font-size: 1.75rem;
+        }
+        /* navlink,  */
+        h4{
+            font-size: 1.125rem;
+        }
+        span{
+            font-size: 0.61rem;
+        }
+        .container{
+            max-width: 85%;
+        }
+        .nav-items{
+            display: flex;
+        }
+        .banner-content {
+            max-width: 450px;
+            width: 100%;
+        }
+        .banner-img .banner-box1, .banner-box2{
+            right: -39px;
+            top: 44px;
+            font-size: 1.875rem;
+            border-radius: 9.07px;
+            max-width: 149px;
+            max-height: 73px;
+        }
+        .banner-box2{
+            right: 112px;
+            top: 188px;
+        }
+    
+
+}

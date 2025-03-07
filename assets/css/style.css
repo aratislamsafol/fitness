@@ -1,4 +1,65 @@
+.header{
+    background-color: #111111;
+    position: center;
+}
+.navbar{
+    padding-top: 58px;
+}
+.nav-items{
+    list-style: none;
+    gap: 47px;
+    border: 1px solid var(--sixth-color);
+    border-radius: 39px;
+    /*  padding: 10px 4px; */
+    padding: 12px 24px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+.logo h7{
+    font-size: 2.25rem;
+    color: var(--fifth-color);
+    font-style: italic;
+}
+/* banner */
+.banner{
+    margin-top: 32px;
+}
+.banner-content{
+    max-width: 520px;
+    width: 100%;
+    gap: 24px;
+}
+.banner-content h1{
+    line-height: 85px;
+}
+.group-btn{
+    gap: 14px;
+}
+.group-btn button:nth-child(2){
+    background-color: transparent;
+    border:1px solid var(--fourth-color);
+}
+.banner-img{
+    position: relative;
+}
+.banner-img .banner-box1, .banner-box2{
+    position: absolute;
+    right: -70px;
+    top: 131px;
+    font-size: 2.5rem;
+    justify-content: center;
+    background: rgb(253 253 253 / 12%);;
+    backdrop-filter: blur(10px);
+    max-width: 193px;
+    max-height: 98px;
+    width:100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.banner-box2{
+    right: 256px;
+    top: 421px;
+}
 
-
-
-  
