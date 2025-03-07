@@ -63,3 +63,35 @@
     top: 421px;
 }
 
+/* Habits */
+.habits-content{
+    text-align: center;
+    max-width: 671px;
+}
+.habits-content p{
+    margin-top: 14px;
+}
+.habits-time{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.card{
+    margin-top: 58px;
+}
+.card-img{
+    border-radius: 50%;
+    border: 6px solid #191919;
+}
+.card-img img{
+    border-radius: 50%;
+}
+.card-title{
+    margin-top: 30px;
+}
+.card-description{
+    margin-top: 6px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+

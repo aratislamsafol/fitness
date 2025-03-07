@@ -121,7 +121,9 @@ body{
     max-width: 73.61%;
     margin: 0 auto;
 }
-
+section{
+    margin-top: 100px;
+}
 .active{
     border-radius: 46px;
     background-color: var(--fifth-color);
