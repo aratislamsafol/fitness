@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lavishly+Yours&display=swap');
+:root{
+    --primary-color: #000000;
+    --secondary-color: #222222; 
+    /* linear color of banner bg */
+    --tertiary-color: rgba(119, 119, 119, 0); 
+    --fourth-color: white;
+    /* button color */
+    --fifth-color: #E6533C;
+    /* regular paragrah color */
+    --sixth-color: rgba(255, 255, 255, 0.5);
+}
+/* font */
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.lavishly-regular {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 78px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 18px;
+}
+span{
+    font-size: 13px;
+}
+p{
+    font-size: 16px;
+}
+/* text color */
+.text-black{
+    color: var(--primary-color);
+}
+.text-gray-700{
+    color: var(--secondary-color);
+}
+.text-gray-400{
+    color: var(--sixth-color);
+}
+.text-white{
+    color: var(--fourth-color);
+}
+.text-orange{
+    color: var(--fifth-color);
+}
+.bg-gray-700{
+    color: var(--tertiary-color);
+}
+/* button */
+.btn_primary{
+    max-width: 224px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    border-radius: 42px;
+}
+/* others */
+.d-flex{
+    display: flex;
+}
+.d-col{
+    flex-direction: column;
+}
+.d-hide{
+    display: none;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items:center;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.img-fluid{
+    width: 100%;
+}
+body{
+    max-width: 1440px;
+}
+.container{
+    max-width: 1060px;
+}
