@@ -94,4 +94,31 @@
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
-
+/* runs */
+.runs-wrapper{
+   background-color: #111111; 
+   border-radius: 18px;
+   padding: 30px 32px;
+}
+.runs .card{
+    flex-direction: row-reverse;
+    gap: 165px;
+}
+.runs .card-img{
+    border:none;
+    border-radius: 18px;
+    /* try to zoom in so using overflow hidden */
+    overflow: hidden;
+}
+.runs .card-img img{
+    border-radius: 18px;
+}
+.card-content{
+    max-width: 443px;
+}
+.runs .card-description{
+    text-align: left;
+}
+.runs button{
+    margin-top: 34px;
+}

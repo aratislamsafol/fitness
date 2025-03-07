@@ -55,6 +55,12 @@
         grid-template-columns: repeat(1,1fr);
         gap: 40px;
     }
+    /* runs */
+    .runs .card{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 31px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) { 
@@ -102,6 +108,10 @@
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
     }
+    .runs .card{
+        flex-direction: column-reverse;
+        gap: 31px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -129,7 +139,8 @@
             display: flex;
         }
         .banner-content {
-            max-width: 450px;
+            
+            max-width: clamp(263px, 10vw ,450px)   ;
             width: 100%;
         }
         .banner-img .banner-box1, .banner-box2{
@@ -149,5 +160,4 @@
             grid-template-columns: repeat(3,1fr);
             gap: 40px;
         }
-
 }
