@@ -104,32 +104,141 @@
                     </div>
                 </div>
             </div>
-           
         </section>
 
         <!-- runs exta mile -->
-         <section class="runs">
+        <section class="runs">
+        <div class="container">
+            <div class="runs-wrapper">
+                <div class="card d-flex space-between align-center
+                ">
+                    <div class="card-img">
+                        <img src="assets/img/run.jpg" class="img-fluid" alt="card-img">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h2 class="font-bold text-white">Run an Extra Mile Easily</h4>
+                        </div>
+                        <div class="card-description"><span class="font-normal">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</span>
+                        </div>
+                        <button type="button" class="btn_primary ">Join Now</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        </section>
+
+         <!-- Training -->
+        <section class="training d-hide">
+        <div class="container">
+            <div class="training-content">
+                <h2 class="text-white font-bold">Trainings and Exercises</h2>
+                <span class="text-gray-400">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</span>
+            </div>
+            <div class="excercise-type">
+                <div class="exercise-items xs-img">
+                    <img class="img-fluid" src="assets/img/exercise1.jpg" alt="exercise-items">
+
+                    <div class="ex-item-content"><span class="text-gray-400 ">Lorem ipsum</span></div>
+                </div>
+
+                <div class="exercise-items lg-img">
+                    <img class="img-fluid" src="assets/img/exercise2.png" alt="exercise-items">
+
+                    <div class="ex-item-content"><span class="text-gray-400 ">Lorem ipsum</span></div>
+                </div>
+
+                <div class="exercise-items normal-img">
+                    <img class="img-fluid" src="assets/img/exercise2.png" alt="exercise-items">
+
+                    <div class="ex-item-content"><span class="text-gray-400 ">Lorem ipsum</span></div>
+                </div>
+
+                <div class="exercise-items normal-img">
+                    <img class="img-fluid" src="assets/img/exercise2.png" alt="exercise-items">
+
+                    <div class="ex-item-content"><span class="text-gray-400 ">Lorem ipsum</span></div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- BMI Calculator -->
+        <section class="bmi">
             <div class="container">
-                <div class="runs-wrapper">
-                    <div class="card d-flex space-between
-                    ">
-                        <div class="card-img">
-                            <img src="assets/img/run.jpg" class="img-fluid" alt="card-img">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <h2 class="font-bold text-white">Run an Extra Mile Easily</h4>
+                <div class="bmi-wrapper d-flex space-between">
+                    <div class="bmi-chart">
+                        <h3 class="text-white font-bold">BMI Calculator Chart</h3>
+                        <table class="text-gray-400">
+                            <tr>
+                                <th>BMI </th>
+                                <th>Weight Status</th>
+                            </tr>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 - and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bmi-calculate d-flex d-col">
+                    <div class="bmi-calculate-content">
+                        <h3 class="font-bold text-white">Calculate your BMI</h3>
+                        <span class="text-gray-400 font-normal">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </span>
+                    </div>
+
+                    <form action="" class="calculator">
+                            <div class="input-group">
+                                <div class="input-item">
+                                    <label for="height"></label>
+                                    <input type="number" placeholder="Height/cm" name="height" id="height">
+                                    <p id="errorMsg" style="color: red; display: none;">Only numbers are allowed!</p>
+                                </div>
+                                
+                                <div class="input-item">
+                                    <label for="Weight"></label>
+                                    <input type="text" placeholder="Weight/kg" name="weight"  id="Weight">
+                                    <p id="errorMsg" style="color: red; display: none;">Only numbers are allowed!</p>
+                                </div>
+
+                                <div class="input-item">
+                                    <label for="age"></label>
+                                    <input type="text" placeholder="Age" name="age"  id="age">
+                                    <p id="errorMsg" style="color: red; display: none;">Only numbers are allowed!</p>
+                                </div>
+                                <!-- select -->
+                                <div class="input-item">
+                                    <label for="sex"></label>
+                                    <select name="sex" id="sex" class="styled-select">
+                                        <option value="" class="font-normal text-gray-400 text" disabled selected>Sex </option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="card-description"><span class="font-normal">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</span>
-                            </div>
-                            <button type="button" class="btn_primary ">Join Now</button>
-                        </div>
-                        
+                        </form>
+                        <button type="submit" class="btn_primary">Calculate</button>
                     </div>
                 </div>
-               
             </div>
-         </section>
+        </section>
+
+        <!-- meet our team -->
+
     </main>
 </body>
 </html>

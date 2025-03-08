@@ -61,6 +61,14 @@
         align-items: center;
         gap: 31px;
     }
+    /* bmi */
+    .bmi-wrapper{
+        flex-direction: column;
+        padding: 49px 0;
+    }
+    .bmi-calculate{
+        margin-top: 62px;
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) { 
@@ -160,4 +168,11 @@
             grid-template-columns: repeat(3,1fr);
             gap: 40px;
         }
+        /* runs */
+        .runs .card{
+            flex-direction: column-reverse;
+            gap: 70px;
+            align-items: start;
+        }
+
 }

@@ -77,7 +77,7 @@
     gap: 40px;
 }
 .card{
-    margin-top: 58px;
+    /* margin-top: 58px; */
 }
 .card-img{
     border-radius: 50%;
@@ -122,3 +122,81 @@
 .runs button{
     margin-top: 34px;
 }
+
+/* training */
+.training-content{
+    max-width: 671px;
+}
+.lg-img{
+    grid-column: span 5;
+}
+.md-img{
+    grid-column: span 4;
+}
+.normal-img{
+    grid-column: span 3;
+}
+.sm-img{
+    grid-column: span 2;
+}
+.xs-img{
+    grid-column: span 1;
+}
+.excercise-type{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.excercise-type .exercise-items{
+    object-fit: cover;
+}
+/* BMI */
+.bmi{
+    background-color: #222222;
+}
+.bmi-wrapper{
+    padding: 49px 0;
+}
+table {
+    margin-top: 52px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 310px;
+  }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px 17px;
+}
+.bmi-calculate{
+    gap: 34px;
+    max-width: 577px;
+}
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.bmi-calculate-content span{
+    padding-top: 14px;
+}
+
+.input-item input, .input-item select{
+    padding: 13px 20px;
+    background-color: #383838;
+    border: none;
+    border-radius: 8px;
+    color: var(--sixth-color);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .styled-select {
+        width: 100%; 
+    }
