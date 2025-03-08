@@ -69,6 +69,11 @@
     .bmi-calculate{
         margin-top: 62px;
     }
+    /* team */
+    .team-members{
+        margin-top: 37px;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media (min-width: 577px) and (max-width: 768px) { 

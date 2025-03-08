@@ -76,9 +76,6 @@
     grid-template-columns: repeat(4,1fr);
     gap: 40px;
 }
-.card{
-    /* margin-top: 58px; */
-}
 .card-img{
     border-radius: 50%;
     border: 6px solid #191919;
@@ -199,4 +196,32 @@ input[type="number"]::-webkit-outer-spin-button,
     }
     .styled-select {
         width: 100%; 
+    }
+    /* team */
+    .team-description{
+        text-align: center;
+    }
+    .team-members{
+        margin-top: 58px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        background-color: #191919;
+        padding: 20px;
+        border-radius: 18px;
+        gap: 20px;
+    }
+    .team-member img{
+        max-width: 326.67px;
+        max-height: 272px;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+    .team-member{
+        position: relative;
+    }
+    .team-member .member-details{
+        position: absolute;
+        bottom: 16px;
+        left: 19px;
+        text-align: left;
     }
