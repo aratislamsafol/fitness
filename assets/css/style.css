@@ -271,7 +271,10 @@ input:focus, textarea:focus, .input-item select {
     max-width: 443px;
 }
 .footer-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 66px;
+    gap: 60px;
 }
 .services a{
     text-decoration: none;

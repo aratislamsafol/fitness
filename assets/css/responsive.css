@@ -122,12 +122,26 @@
     .team-member:nth-child(n+5){
         display: none;
     }
-    .footer-items{
-        flex-wrap: wrap;
-    }
     .team-member .member-details {
         left: 18%;
     }
+    /* footer */
+    .footer {
+        margin-top: 66px;
+    }
+    .footer-items{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    
+    .brand-content{
+        margin-bottom: 10px;
+        grid-column: 1 / -1;
+    }
+    .page-links{
+        margin-top: 10px;
+    }
+    
 }
 
 @media (min-width: 577px) and (max-width: 768px) { 
@@ -155,7 +169,7 @@
         max-width: 92%;
     }
     section{
-        margin-top: 70px;
+        margin-top: 66px;
     }
     .nav-items{
         display: flex;
@@ -209,6 +223,16 @@
     /* team */
     .team-members{
         grid-template-columns: repeat(2,1fr);
+    }
+    .footer-items{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .page-links{
+        margin-top: 10px;
+    }
+    .brand-content{
+        grid-column: 1 / -1;
     }
 }
 
@@ -280,6 +304,14 @@
         .bmi-calculate {
             margin-top: 62px;
         }
+        /* footer */
+        .footer-items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .brand-content{
+            grid-column: 1/-1;
+        }
+        
 
 }
 @media (min-width: 1024px) and (max-width: 1200px) {
