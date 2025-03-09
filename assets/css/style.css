@@ -185,12 +185,14 @@
 }
 .bmi-wrapper{
     padding: 49px 0;
+    gap: 45px;
 }
+
 table {
     margin-top: 52px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    max-width: 310px;
+    width: clamp(250px,55vw, 310px);
   }
 td, th {
     border: 1px solid #dddddd;
@@ -201,93 +203,93 @@ td, th {
     gap: 34px;
     max-width: 577px;
 }
-.input-group{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
 .bmi-calculate-content span{
     padding-top: 14px;
 }
-
-.input-item input, .input-item select{
-    padding: 13px 20px;
+.input-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+.input-item, .styled-select{
     background-color: #383838;
-    border: none;
+}
+.input-item{
     border-radius: 8px;
+    padding: 13px 20px;
+}
+input, textarea, select {
+    height: 23px;
+    width: 100%;
+    background: transparent;
+    border: none;
     color: var(--sixth-color);
 }
-
-input:focus, textarea:focus {
+input:focus, textarea:focus, .input-item select {
     outline: none;
     box-shadow: none;
 }
-input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    .styled-select {
-        width: 100%; 
-    }
-    /* team */
-    .team-description{
-        text-align: center;
-    }
-    .team-members{
-        margin-top: 58px;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        background-color: #191919;
-        padding: 20px;
-        border-radius: 18px;
-        gap: 20px;
-    }
-    .team-member img{
-        max-width: 326.67px;
-        max-height: 272px;
-        object-fit: cover;
-        border-radius: 18px;
-    }
-    .team-member{
-        position: relative;
-    }
-    .team-member .member-details{
-        position: absolute;
-        bottom: 16px;
-        left: 19px;
-        text-align: left;
-    }
+.input-group .input-item-lg{
+    grid-column: 1/-1;
+}
+/* team */
+.team-description{
+    text-align: center;
+}
+.team-members{
+    margin-top: 58px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 18px;
+    gap: 20px;
+}
+.team-member img{
+    max-width: 326.67px;
+    max-height: 272px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+.team-member{
+    position: relative;
+}
+.team-member .member-details{
+    position: absolute;
+    bottom: 16px;
+    left: 19px;
+    text-align: left;
+}
 
-    /* footer */
-    .footer{
-        background-color: #111111;;
-    }
-    .brand-content{
-        gap: 20px;
-        max-width: 443px;
-    }
-    .footer-items{
-        padding-top: 66px;
-    }
-    .services a{
-        text-decoration: none;
-        color: #383838;
-        font-size: 1.4rem;
-    }
-    .services{
-        margin-top: 39px;
-        gap: 20px;
-    }
-    .footer-border{
-        margin-top: 79px;
-    }
-    .footer-border{
-        width: 100%;
-        background-color: rgba(255, 255, 255, 0.1);
-        height: 2px;
-    }
-    .copyright{
-        padding: 35px;
-        text-align: center;
-    }
+/* footer */
+.footer{
+    background-color: #111111;;
+}
+.brand-content{
+    gap: 20px;
+    max-width: 443px;
+}
+.footer-items{
+    padding-top: 66px;
+}
+.services a{
+    text-decoration: none;
+    color: #383838;
+    font-size: 1.4rem;
+}
+.services{
+    margin-top: 39px;
+    gap: 20px;
+}
+.footer-border{
+    margin-top: 79px;
+}
+.footer-border{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 2px;
+}
+.copyright{
+    padding: 35px;
+    text-align: center;
+}
