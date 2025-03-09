@@ -6,42 +6,55 @@
     h1{
         font-size: 2.25rem;
     }
-    /* h2{
-        font-size: 3rem;
+    h2{
+        font-size: 2rem;
     }
     h3{
-        font-size: 1.75rem;
-    } */
-    .container{
-        max-width: 92%;
+        font-size: 1.25rem;
     }
-    /* navlink,  */
     h4{
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
     span{
         font-size: 0.61rem;
     }
+    .container{
+        max-width: 92%;
+    }
+    /* design */
     .nav-items{
         display: none;
     }
+    .nav-link{
+        font-size: 1rem;
+    }
+  
+    /* banner */
     .banner-content h1{
-        line-height: 40px;
+        line-height: 1.2;
+    }
+    .banner-content p{
+        line-height: 24px;
     }
     .banner{
         flex-direction: column;
     }
+    .banner-content {
+        width: 100%;
+    }
     .banner-img .banner-box1, .banner-box2{
-        right: 6px;
-        top: 68px;
         font-size: 1.875rem;
         border-radius: 9.07px;
-        max-width: 145.91px;
+        width: clamp(120px, 30vw, 145.91px);
         max-height: 74.09px;
     }
+    .banner-box1{
+        right: 6px;
+        top: 68px;
+    }
     .banner-box2{
-        right: 187px;
-        top: 259px;
+        right: 190px;
+        bottom: 170px;
     }
     .btn_primary{
         max-width: 169px;
@@ -81,39 +94,44 @@
 
 @media (min-width: 577px) and (max-width: 768px) { 
     /* font */
-    h1{
-        font-size: 4.8rem;
-    }
-    h2{
+    .lavishly-regular {
         font-size: 3rem;
     }
-    h3{
-        font-size: 1.75rem;
+    h1{
+        font-size: 3rem;
     }
-    /* navlink,  */
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
     h4{
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
     span{
         font-size: 0.61rem;
     }
-
+    /* design */
     .container{
         max-width: 92%;
     }
     .nav-items{
         display: flex;
     }
+    .nav-link{
+        font-size: 1rem;
+    }
     .banner{
         flex-direction: column;
+    }
+    .banner-content {
+        width: 100%;
     }
     .banner-img .banner-box1, .banner-box2{
         right: -33px;
         top: 68px;
-        font-size: 1.875rem;
         border-radius: 9.07px;
-        max-width: 193px;
-        max-height: 98px;
     }
     .banner-box2{
         right: 204px;
@@ -132,44 +150,47 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
         /* font */
+        .lavishly-regular {
+            font-size: 3.5rem;
+        }
         h1{
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
         h2{
             font-size: 3rem;
         }
         h3{
-            font-size: 1.75rem;
+            font-size: 2.5rem;
         }
-        /* navlink,  */
         h4{
-            font-size: 1.125rem;
+            font-size: 1rem;
         }
         span{
             font-size: 0.61rem;
         }
+        /* design */
         .container{
             max-width: 85%;
         }
         .nav-items{
             display: flex;
         }
-        .banner-content {
-            
-            max-width: clamp(263px, 10vw ,450px)   ;
-            width: 100%;
+        .nav-link{
+            font-size: 1rem;
         }
+
+        /* banner */
         .banner-img .banner-box1, .banner-box2{
+            border-radius: 9.07px;
+            width: clamp(160px, 22vw, 193.91px);
+        }
+        .banner-box1{
             right: -39px;
             top: 44px;
-            font-size: 1.875rem;
-            border-radius: 9.07px;
-            max-width: 149px;
-            max-height: 73px;
         }
         .banner-box2{
-            right: 112px;
-            top: 188px;
+            right: 156px;
+            bottom: 108px;
         }
         /* habits */
         .habits-time{
@@ -183,4 +204,23 @@
             align-items: start;
         }
 
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+     /* banner */
+     .banner-content {
+        width: 52.69%;
+        gap: 24px;
+    }
+     .banner-img .banner-box1, .banner-box2{
+        border-radius: 9.07px;
+        width: clamp(160px, 22vw, 193.91px);
+    }
+    .banner-box1{
+        right: -42px;
+        top: 117px;
+    }
+    .banner-box2{
+        right: 166px;
+        bottom: 96px;
+    }
 }
