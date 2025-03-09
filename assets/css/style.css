@@ -276,6 +276,12 @@ input:focus, textarea:focus, .input-item select {
     padding-top: 66px;
     gap: 60px;
 }
+.services-title{
+    text-wrap: nowrap;
+}
+.get-start{
+    font-size: 32px;
+}
 .services a{
     text-decoration: none;
     color: #383838;
