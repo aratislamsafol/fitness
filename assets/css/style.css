@@ -250,6 +250,7 @@ input:focus, textarea:focus, .input-item select {
     max-height: 272px;
     object-fit: cover;
     border-radius: 18px;
+    height: 100%;
 }
 .team-member{
     position: relative;

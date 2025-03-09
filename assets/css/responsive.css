@@ -119,8 +119,14 @@
         margin-top: 37px;
         grid-template-columns: repeat(1,1fr);
     }
+    .team-member:nth-child(n+5){
+        display: none;
+    }
     .footer-items{
         flex-wrap: wrap;
+    }
+    .team-member .member-details {
+        left: 18%;
     }
 }
 
@@ -199,6 +205,10 @@
     }
     .bmi-calculate {
         margin-top: 62px;
+    }
+    /* team */
+    .team-members{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
