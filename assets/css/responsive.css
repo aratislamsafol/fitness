@@ -13,7 +13,7 @@
         font-size: 1.25rem;
     }
     h4{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     span{
         font-size: 0.7rem;
@@ -80,7 +80,33 @@
         align-items: center;
         gap: 31px;
     }
+    .runs .card-img img {
+        width: 100%;
+    }
 
+    /* training */
+    .excercise-type{
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .exercise-items:nth-child(n+5){
+        display: none;
+    }
+    .lg-img{
+        grid-column: span 5;
+    }
+    .md-img{
+        grid-column: span 6;
+    }
+    .normal-img{
+        grid-column: span 3;
+    }
+    .xs-img{
+        grid-column: span 4;
+    }
+    .bmi-part {
+        margin-top: 30px;
+        margin-left: 0;
+    }
     /* bmi */
     .bmi-wrapper{
         flex-direction: column;
@@ -123,6 +149,9 @@
     .container{
         max-width: 92%;
     }
+    section{
+        margin-top: 70px;
+    }
     .nav-items{
         display: flex;
     }
@@ -156,6 +185,14 @@
     .runs .card{
         flex-direction: column-reverse;
         gap: 31px;
+    }
+    .runs .card-img img {
+        width: 100%;
+    }
+    /* trainig */
+    .bmi-part {
+        margin-top: 72px;
+        margin-left: 0;
     }
 }
 

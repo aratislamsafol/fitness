@@ -143,26 +143,41 @@
     max-width: 671px;
 }
 .lg-img{
-    grid-column: span 5;
+    grid-column: span 7;
 }
 .md-img{
-    grid-column: span 4;
+    grid-column: span 6;
 }
 .normal-img{
-    grid-column: span 3;
+    grid-column: span 5;
 }
 .sm-img{
-    grid-column: span 2;
+    grid-column: span 4;
 }
 .xs-img{
-    grid-column: span 1;
+    grid-column: span 3;
 }
 .excercise-type{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-columns: repeat(15, 1fr);
+    margin-top: 58px;
 }
-.excercise-type .exercise-items{
+.ex-item-content{
+    position: relative;
+    bottom: 57px;
+    left: 12px;
+}
+.excercise-type .exercise-items img{
+    height: 100%;
     object-fit: cover;
+}
+.bmi-part{
+    margin-top: 88px;
+    margin-left:17%;
+    max-width: 671px;
+}
+.bmi-part span{
+    margin-top: 14px;
 }
 /* BMI */
 .bmi{
